@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.divDino {
+    width: 60px;
+    height: 60px;
+    background-image: url('dio-dino-game-master/dino.png');
+    position: absolute;
+    bottom: 0;
+}
+
+.divCacto {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url('dio-dino-game-master/cactus.png');
+}
+
+.fimDeJogo {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Ubuntu';
+    color: #640000;
+}
+
+#pontuacao {
+    text-align: center;
+    font-family: 'Ubuntu';
+    color: #b16400;
+}
+
+@keyframes fundo{
+    from{
+        background-position: 100%;
+    } to {
+        background-position: 0;
+    }
+}
+
+.divFundo{
+    position: absolute;
+    bottom: 0;
+    background-image: url('dio-dino-game-master/background.png');
+    background-repeat: repeat-x;
+    animation: fundo 10s infinite linear;
+    width: 100%;
+    height: 200px;
+}
